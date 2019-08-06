@@ -27,7 +27,7 @@ public class Main {
   public static void flipNHeads(int n){
     int FLIPS = 0;
     int N = 0;
-    while(N != n){
+    while(N < n){
       double flip = Math.random();
       FLIPS++;
       if(flip >= 0.5){
