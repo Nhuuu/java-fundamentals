@@ -12,33 +12,34 @@ public class Main {
     int turtleCount = 0;
     System.out.println("I own " + turtleCount + " " + pluralize("turtle", turtleCount) + ".");
 
-    flipNHeads(10);
+    flipNHeads(5);
     clock();
   }
 
   public static String pluralize(String word, int num){
     String pluralWord = word;
-    if(num == 0 || num > 1){
+    if(num != 1){
       pluralWord = word + "s";
     }
     return pluralWord;
   }
 
   public static void flipNHeads(int n){
-    int numflips = 0;
-    int heads = 0;
-    while(heads < n){
+    int FLIPS = 0;
+    int N = 0;
+    while(N != n){
       double flip = Math.random();
-      numflips++;
+      FLIPS++;
       if(flip >= 0.5){
-        heads++;
+        N++;
         System.out.println("heads");
       } 
       if(flip < 0.5){
+        N = 0;
         System.out.println("tails");
       }
     }
-    System.out.println("It took " + numflips + " flips to flip " + heads + " heads in a row.");
+    System.out.println("It took " + FLIPS + " flips to flip " + N + " heads in a row.");
   }
 
   public static void clock(){
@@ -46,8 +47,8 @@ public class Main {
     while(true){
       LocalDateTime now = LocalDateTime.now();
       int sec = now.getSecond();
-      String time = now.format(DateTimeFormatter.ofPattern("HH:mm:ss"));
       if(prevSec != sec){
+        String time = now.format(DateTimeFormatter.ofPattern("HH:mm:ss"));
         System.out.println(time); 
         prevSec = sec;
       }
