@@ -42,7 +42,7 @@ public class Library {
       int sum = 0;
       for(int j = 0; j < arr[i].length; j++){
         sum += arr[i][j];
-        avg = sum/7;
+        avg = sum/arr[i].length;
       }
       averages.add(avg);
     }
