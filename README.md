@@ -2,7 +2,13 @@
 
 This repo holds labs for CF - 401
 
-## Main.java
+## basics: Main.java
 * Pluralize word
 * Flipping Coins
 * Command Line Clock
+
+## basiclibrary: 
+* Rolling Dice
+* Contains Duplicates
+* Calculating Averages
+* Lowest value Array of Arrays
