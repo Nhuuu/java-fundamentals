@@ -12,3 +12,5 @@ This repo holds labs for CF - 401
 * Contains Duplicates
 * Calculating Averages
 * Lowest value Array of Arrays
+* Analyze weather data
+* Tally
