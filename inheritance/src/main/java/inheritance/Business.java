@@ -22,5 +22,4 @@ public class Business implements BusinessReview {
     }
     this.stars = newStars / this.reviews.size() ;
   }
-
 }

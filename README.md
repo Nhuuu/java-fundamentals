@@ -20,7 +20,7 @@ Linter checks to see if there are semicolons at the end of a line in your js fil
 
 Line 1: Missing semicolon.
 
-## inheritance: Restaurant.java, Review.java
+## inheritance: Business.java, BusinessReview.java, Restaurant.java, Review.java, Shop.java, Theater.java
 * Business addReview()
 * BusinessReview interface addReview()
 * Restaurant toString()
