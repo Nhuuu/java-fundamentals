@@ -13,11 +13,8 @@ public class ReviewTest {
     testReview = new Review("So good!", "Nhu", 5, restaurant);
   }
   @Test public void testToString() {
-    assertEquals("Restaurant: Little Uncle, Price: $, Stars: 5 \n" +
+    assertEquals("Restaurant: Little Uncle, Price: 1, Stars: 5 \n" +
         "Author: Nhu, Body: So good!", testReview.toString());
   }
-
-
-
 
 }

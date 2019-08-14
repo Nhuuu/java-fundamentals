@@ -4,18 +4,22 @@ public class Review {
   String body;
   String author;
   int stars;
-  Restaurant restaurant;
+  Business business;
 
-  public Review (String body, String author, int stars, Restaurant restaurant){
+  public Review (String body, String author, int stars, Business business){
     this.body = body;
     this.author = author;
     this.stars = stars;
-    this.restaurant = restaurant;
-    if(this.restaurant != null) restaurant.addReview(this);
+    this.business = business;
+    if(this.business != null) business.addReview(this);
   }
 
-  public void setRestaurant(Restaurant restaurant){
-    this.restaurant = restaurant;
+  public void setBusiness(Business business){
+    this.business = business;
+  }
+
+  public Business getBusiness(){
+    return business;
   }
 
   public int getStars(){
@@ -24,7 +28,7 @@ public class Review {
 
   public String toString(){
     return String.format("%s, Stars: %d \n" +
-        "Author: %s, Body: %s", this.restaurant, this.stars, this.author, this.body);
+        "Author: %s, Body: %s", this.getBusiness(), this.getStars(), this.author, this.body);
   }
 
 }
