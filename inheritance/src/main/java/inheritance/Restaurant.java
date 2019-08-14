@@ -5,10 +5,10 @@ import java.util.ArrayList;
 public class Restaurant {
   String name;
   int stars;
-  String priceCategory;
+  int priceCategory;
   ArrayList<Review> reviews;
 
-  public Restaurant(String name, int stars, String priceCategory){
+  public Restaurant(String name, int stars, int priceCategory){
     this.name = name;
     this.stars = stars;
     this.priceCategory = priceCategory;
@@ -16,7 +16,7 @@ public class Restaurant {
   }
 
   public String toString(){
-    return String.format("Restaurant: %s, Price: %s", this.name, this.priceCategory);
+    return String.format("Restaurant: %s, Price: %d", this.name, this.priceCategory);
   }
 
   public ArrayList<Review> getReviews(){
