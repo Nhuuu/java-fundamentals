@@ -26,6 +26,7 @@ public class Theater extends Business {
     return movies.toString();
   }
 
+  @Override
   public String toString(){
     return String.format("Theater: %s, Stars: %d", this.name, this.stars);
   }

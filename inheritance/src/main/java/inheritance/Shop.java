@@ -10,6 +10,7 @@ public class Shop extends Business {
     this.description = description;
   }
 
+  @Override
   public String toString(){
     return String.format("Shop: %s \n Description: %s \n Price: %d \n Stars: %d", this.name, this.description,
         this.price, this.stars);

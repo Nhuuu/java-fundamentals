@@ -2,7 +2,7 @@ package inheritance;
 
 import java.util.ArrayList;
 
-public class Business implements BusinessReview {
+public class Business implements Reviewable {
   String name;
   int stars;
   ArrayList<Review> reviews;
@@ -22,5 +22,4 @@ public class Business implements BusinessReview {
     }
     this.stars = newStars / this.reviews.size() ;
   }
-
 }

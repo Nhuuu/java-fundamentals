@@ -21,7 +21,6 @@ public class TheaterTest {
     assertEquals("a movie", testTheater.getMovies());
   }
 
-//
 //  @Test public void testRemoveMovie() {
 //
 //  }
