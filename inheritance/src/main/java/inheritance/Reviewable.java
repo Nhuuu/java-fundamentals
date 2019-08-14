@@ -1,6 +1,6 @@
 package inheritance;
 
-public interface BusinessReview {
+public interface Reviewable {
   public void addReview(Review review);
   public String toString();
 }
