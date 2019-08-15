@@ -10,7 +10,7 @@ public class Restaurant extends Business {
 
   @Override
   public String toString(){
-    return String.format("Restaurant: %s, Price: %d, Stars: %d", this.name, this.price, this.stars);
+    return String.format("Restaurant: %s, Price: %d", this.name, this.price);
   }
 
 }
