@@ -13,7 +13,7 @@ public class RestaurantTest {
   }
 
   @Test public void testToString() {
-    assertEquals("Restaurant: Little Uncle, Price: 5, Stars: 1", testRestaurant.toString());
+    assertEquals("Restaurant: Little Uncle, Price: 5", testRestaurant.toString());
   }
 
   @Test public void testAddReview(){
