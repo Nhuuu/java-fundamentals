@@ -3,27 +3,33 @@ package inheritance;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+
 import static org.junit.Assert.*;
 
 public class TheaterTest {
 
   Theater testTheater;
   @Before
-  public void setUp() throws Exception {
-    Theater testTheater = new Theater("AMC", 3);
+  public void setUp() {
+    testTheater = new Theater("AMC", 3);
   }
   @Test public void testToString() {
-    assertEquals("Should print out a string match.", "Theater: AMC \n Price: 5 \n Stars: 3",
+    assertEquals("Should print out a string match.", "Theater: AMC \n Stars: 3",
         testTheater.toString());
   }
 
   @Test public void testAddMovie() {
-    assertEquals("a movie", testTheater.getMovies());
+    testTheater.addMovie("a movie");
+    assertEquals("Should add a movie", "[a movie]", testTheater.getMovies().toString());
   }
 
-//  @Test public void testRemoveMovie() {
-//
-//  }
+  @Test public void testRemoveMovie() {
+    testTheater.addMovie("a movie");
+    testTheater.removeMovie("a movie");
+    assertFalse("Should remove a movie", testTheater.movies.contains("a movie"));
+  }
 
   @Test public void testAddReview(){
     Review testReview = new Review("Movie sucks!", "Nhu", 3, testTheater);
